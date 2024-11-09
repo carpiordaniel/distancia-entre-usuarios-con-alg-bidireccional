@@ -24,17 +24,7 @@ let users = [
     "Following": ["userG", "userA", "userX", "userY", "userZ"]
   }
 ];
-const URL = "../data/users.json";
-const cargarUsuarios = async () => {
-  try {
-    const response = await fetch(URL);
-    const data = await response.json();
-    users = data.users;
-  } catch (error) {
-    document.getElementById("result").innerHTML =
-      "Error al cargar los datos de usuarios";
-  }
-};
+
 // Algoritmo en amplitud (BFS) para encontrar la distancia
 const buscarDistancia = (usuarioOrigen, usuarioDestino) => {
   if (usuarioOrigen === usuarioDestino) return 0;
@@ -87,10 +77,8 @@ const calcularDistancia = () => {
 };
 
 const obtenerValorConFormato = (id) => {
-  // Obtiene el valor de un campo, lo convierte todo a minúsculas y cambia la última letra a mayúsculas.
   const valor = document.getElementById(id).value;
-  return valor.toLowerCase().replace(/(.)$/, (match) => match.toUpperCase());
+  return valor.replace(/\s+/g, '').toLowerCase().replace(/(.)$/, match => match.toUpperCase());
 };
 
-//window.onload = cargarUsuarios;
 

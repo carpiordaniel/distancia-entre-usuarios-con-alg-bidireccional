@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Prueba Técnica Telconet</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Calculadora de Distancia Social</h2>
+        
+        <div class="input-section">
+            <input 
+                type="text" 
+                id="userStart" 
+                placeholder="userA"
+                autocomplete="off"
+            >
+            <input 
+                type="text" 
+                id="userEnd" 
+                placeholder="userB"
+                autocomplete="off"
+            >
+            <button onclick="calcularDistancia()">Calcular Distancia</button>
+        </div>
+
+        <div class="result" id="result">
+            Ingresa dos usuarios para calcular la distancia entre ellos.
+        </div>
+
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>

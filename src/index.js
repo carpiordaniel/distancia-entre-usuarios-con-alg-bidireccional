@@ -1,4 +1,29 @@
-let users = [];
+let users = [
+  {
+    "user": "userA",
+    "Following": ["userB", "userD", "userE", "userG"]
+  },
+  {
+    "user": "userB",
+    "Following": ["userC", "userJ", "userI", "userE"]
+  },
+  {
+    "user": "userC",
+    "Following": ["userM", "userN", "userJ", "userI", "userE"]
+  },
+  {
+    "user": "userD",
+    "Following": ["userE", "userK", "userS", "userA", "userE"]
+  },
+  {
+    "user": "userE",
+    "Following": ["userO", "userN", "userP", "userI", "userL"]
+  },
+  {
+    "user": "userM",
+    "Following": ["userG", "userA", "userX", "userY", "userZ"]
+  }
+];
 const URL = "../data/users.json";
 const cargarUsuarios = async () => {
   try {
@@ -67,5 +92,5 @@ const obtenerValorConFormato = (id) => {
   return valor.toLowerCase().replace(/(.)$/, (match) => match.toUpperCase());
 };
 
-window.onload = cargarUsuarios;
+//window.onload = cargarUsuarios;
 

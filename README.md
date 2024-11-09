@@ -6,6 +6,6 @@ Instrucciones para levantar el proyecto.
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/carpiordaniel/distancia-entre-usuarios-con-alg-bidireccional.git
+   git clone https://github.com/carpiordaniel/distancia-entre-usuarios-daniel-carpio.git
 
 2. Abrir el index.html (lo puedes hacer desde el explorador de archivos o instalando el plugin de live server)
